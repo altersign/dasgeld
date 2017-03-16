@@ -2,3 +2,4 @@
 %project=dasgeld
 %uri=https://github.com/altersign/dasgeld/
 
+baseschema 2017-03-14T23:42:13Z Yaroslav Polyakov <yaroslav.polyakov@gmail.com> # Add initial database schema, sqlite compatible
