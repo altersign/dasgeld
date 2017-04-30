@@ -11,9 +11,9 @@ my %_config = (
 );
 
 has get => (
-    is => 'ro',
-    isa => 'HashRef',
-    default => sub {\%_config},
+    is      => 'ro',
+    isa     => 'HashRef',
+    default => sub { \%_config },
 );
 
 sub connect_info {
