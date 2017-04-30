@@ -1,4 +1,4 @@
-# SETUP PROCESS
+# Setup process
 
 ## Prerequsives
 
@@ -24,4 +24,4 @@ Copy db/schema.sql to sqitch/deploy/baseschema.sql
 
 Create dbicdump.conf and put there settings for DBIx::Class::Schema::Loader
 
-Add revert and verivy scripts
+Add revert and verify scripts
