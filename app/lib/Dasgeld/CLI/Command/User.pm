@@ -15,7 +15,7 @@ parameter 'operation' => (
     required      => 1,
 );
 
-command_short_description 'Managament of user accounts';
+command_short_description 'Management of user accounts';
 
 sub run {
     my ($self) = @_;
