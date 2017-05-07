@@ -1,5 +1,5 @@
 -- Verify dasgeld:baseschema on sqlite
-
+PRAGMA foreign_keys = ON;
 BEGIN TRANSACTION;
 
 SELECT person_id, name, email, created FROM person WHERE 0;
