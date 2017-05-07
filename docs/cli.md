@@ -18,7 +18,7 @@
 ## Operations
 
     dasgeld add <summa> [--message <message>] [--account <name>] [--user <name>] [--tags <tag>[, ...]]
-    dasgeld [withdraw] <summa> [--message <message>] [--account <name>] [--user <name>] [--tags <tag>[, ...]]
+    dasgeld [withdraw|w] <summa> [--message|m <message>] [--account|a <name>] [--user <name>] [--tags <tag>[, ...]] [--transfer account_name] [--date <operation date>]
     dasgeld edit [<changed summa>] --operation <id> [--date <changed date>]  [--message <message>] [--tags <tag>[, ...]]
 
 ## Reports
