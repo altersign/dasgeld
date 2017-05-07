@@ -13,8 +13,9 @@ has app => (
 );
 
 option 'user' => (
-    is  => 'rw',
-    isa => 'Str',
+    is      => 'rw',
+    isa     => 'Str',
+    cmd_env => 'USER',
     documentation =>
       'Optional user name. If not set, system user name is used',
 );
