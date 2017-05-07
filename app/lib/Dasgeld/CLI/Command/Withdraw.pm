@@ -60,7 +60,7 @@ sub run {
             account_id => $account->account_id,
 
             # convert to integer
-            summa       => -int( $self->amount * 100 ),
+            amount      => -int( $self->amount * 100 ),
             description => $self->description,
             tags        => join ', ' => $self->tags->@*,
         }
