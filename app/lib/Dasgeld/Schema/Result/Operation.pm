@@ -49,7 +49,7 @@ __PACKAGE__->table("operation");
   is_foreign_key: 1
   is_nullable: 0
 
-=head2 summa
+=head2 amount
 
   data_type: 'integer'
   is_nullable: 0
@@ -107,7 +107,7 @@ __PACKAGE__->add_columns(
   { data_type => "integer", is_auto_increment => 1, is_nullable => 0 },
   "account_id",
   { data_type => "integer", is_foreign_key => 1, is_nullable => 0 },
-  "summa",
+  "amount",
   { data_type => "integer", is_nullable => 0 },
   "description",
   { data_type => "text", is_nullable => 1 },
@@ -230,8 +230,8 @@ __PACKAGE__->belongs_to(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07046 @ 2017-03-16 01:48:58
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:qqdvuwINzYjHGxiNGpQ9DQ
+# Created by DBIx::Class::Schema::Loader v0.07046 @ 2017-05-07 23:44:33
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:fMeQjLp69awO99hKofbxFg
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

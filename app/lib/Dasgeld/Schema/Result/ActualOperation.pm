@@ -48,7 +48,7 @@ __PACKAGE__->table("actual_operation");
   data_type: 'integer'
   is_nullable: 1
 
-=head2 summa
+=head2 amount
 
   data_type: 'integer'
   is_nullable: 1
@@ -100,7 +100,7 @@ __PACKAGE__->add_columns(
   { data_type => "integer", is_nullable => 1 },
   "account_id",
   { data_type => "integer", is_nullable => 1 },
-  "summa",
+  "amount",
   { data_type => "integer", is_nullable => 1 },
   "description",
   { data_type => "text", is_nullable => 1 },
@@ -121,8 +121,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07046 @ 2017-03-16 01:48:58
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:BIZJnm6T0D8G6Hk3GqjQTQ
+# Created by DBIx::Class::Schema::Loader v0.07046 @ 2017-05-07 23:44:33
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:R8eNw/911fAwWGdq+oIq4A
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
