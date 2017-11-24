@@ -11,6 +11,7 @@ command_short_description 'Withdraw amounts from account';
 
 parameter 'amount' => (
     is            => 'rw',
+                     # TODO: subtype 'Cents' with coerce from Num
     isa           => subtype( 'Num' => where { $_ > 0 } ),
     required      => 1,
     documentation => q[Amount of money to withdraw from the account],
@@ -60,7 +61,7 @@ sub run {
             account_id => $account->account_id,
 
             # convert to integer
-            amount      => -int( $self->amount * 100 ),
+            amount      => -int( $self->amount * 100 + 0.5 ),
             description => $self->description,
             tags        => join ', ' => $self->tags->@*,
         }
