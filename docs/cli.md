@@ -24,4 +24,4 @@
 ## Reports
 
     dasgeld report [--from <date>] [--to <date>]
-    dasgeld list [--from <date>] [--to <date>]
+    dasgeld list [--from <date>] [--to <date>] [--account|a <name>] [--verbose]
