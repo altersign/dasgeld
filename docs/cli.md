@@ -15,6 +15,10 @@
     dasgeld account list
     dasgeld account default
 
+# Tags
+
+    dasgeld tag list [--verbose] # verbose shows number of usages
+
 ## Operations
 
     dasgeld add <summa> [--message <message>] [--account <name>] [--user <name>] [--tags <tag>[, ...]]
