@@ -121,8 +121,9 @@ __PACKAGE__->add_columns(
     { data_type => "integer", is_nullable => 1 },
 );
 
-# Created by DBIx::Class::Schema::Loader v0.07046 @ 2017-05-07 23:44:33
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:R8eNw/911fAwWGdq+oIq4A
+
+# Created by DBIx::Class::Schema::Loader v0.07047 @ 2019-02-23 03:31:31
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:DZ7zuLF9m1QPc3ShbaKuhA
 
 =head1 RELATIONS
 

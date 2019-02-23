@@ -1,4 +1,5 @@
 use utf8;
+
 package Dasgeld::Schema::Result::Person;
 
 # Created by DBIx::Class::Schema::Loader
@@ -27,7 +28,7 @@ use base 'DBIx::Class::Core';
 
 =cut
 
-__PACKAGE__->load_components("InflateColumn::DateTime", "TimeStamp");
+__PACKAGE__->load_components( "InflateColumn::DateTime", "TimeStamp" );
 
 =head1 TABLE: C<person>
 
@@ -62,18 +63,17 @@ __PACKAGE__->table("person");
 =cut
 
 __PACKAGE__->add_columns(
-  "person_id",
-  { data_type => "integer", is_auto_increment => 1, is_nullable => 0 },
-  "name",
-  { data_type => "text", is_nullable => 0 },
-  "email",
-  { data_type => "text", is_nullable => 0 },
-  "created",
-  {
-    data_type     => "timestamp",
-    default_value => \"current_timestamp",
-    is_nullable   => 0,
-  },
+    "person_id",
+    { data_type => "integer", is_auto_increment => 1, is_nullable => 0 },
+    "name",
+    { data_type => "text", is_nullable => 0 },
+    "email",
+    { data_type => "text", is_nullable => 0 },
+    "created",
+    {   data_type     => "timestamp",
+        default_value => \"current_timestamp",
+        is_nullable   => 0,
+    },
 );
 
 =head1 PRIMARY KEY
@@ -99,10 +99,10 @@ Related object: L<Dasgeld::Schema::Result::Account>
 =cut
 
 __PACKAGE__->has_many(
-  "accounts",
-  "Dasgeld::Schema::Result::Account",
-  { "foreign.account_owner_id" => "self.person_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
+    "accounts",
+    "Dasgeld::Schema::Result::Account",
+    { "foreign.account_owner_id" => "self.person_id" },
+    { cascade_copy               => 0, cascade_delete => 0 },
 );
 
 =head2 auths
@@ -114,10 +114,10 @@ Related object: L<Dasgeld::Schema::Result::Auth>
 =cut
 
 __PACKAGE__->has_many(
-  "auths",
-  "Dasgeld::Schema::Result::Auth",
-  { "foreign.person_id" => "self.person_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
+    "auths",
+    "Dasgeld::Schema::Result::Auth",
+    { "foreign.person_id" => "self.person_id" },
+    { cascade_copy        => 0, cascade_delete => 0 },
 );
 
 =head2 operations
@@ -129,15 +129,15 @@ Related object: L<Dasgeld::Schema::Result::Operation>
 =cut
 
 __PACKAGE__->has_many(
-  "operations",
-  "Dasgeld::Schema::Result::Operation",
-  { "foreign.editor_id" => "self.person_id" },
-  { cascade_copy => 0, cascade_delete => 0 },
+    "operations",
+    "Dasgeld::Schema::Result::Operation",
+    { "foreign.editor_id" => "self.person_id" },
+    { cascade_copy        => 0, cascade_delete => 0 },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07046 @ 2017-03-16 01:48:58
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:XwT9uZIzilw1+mClT6zZwg
+# Created by DBIx::Class::Schema::Loader v0.07047 @ 2019-02-23 03:31:30
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:jimuWfrdC9pjk1ZydKEDLw
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
