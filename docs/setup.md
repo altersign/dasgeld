@@ -24,4 +24,6 @@ Copy db/schema.sql to sqitch/deploy/baseschema.sql
 
 Create dbicdump.conf and put there settings for DBIx::Class::Schema::Loader
 
+Run `dbicdump dbicdump.conf`
+
 Add revert and verify scripts
