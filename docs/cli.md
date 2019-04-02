@@ -2,22 +2,22 @@
 
 ## Users
 
-    dasgeld user add [<name>]
+    dasgeld user add [<name>]       # Not implemented
     dasgeld user list
-    dasgeld user edit [<name>]
+    dasgeld user edit [<name>]      # Not implemented
 
-    dasgeld user disable <name>
-    dasgeld user enable <name>
+    dasgeld user disable <name>     # Not implemented
+    dasgeld user enable <name>      # Not implemented
 
 ## Accounts
 
-    dasgeld account add <name>
-    dasgeld account list
-    dasgeld account default
+    dasgeld account add <name>      # Not implemented
+    dasgeld account list            # Not implemented
+    dasgeld account default         # Not implemented
 
 # Tags
 
-    dasgeld tag list [--verbose] # verbose shows number of usages
+    dasgeld tag list [--verbose]
 
 ## Operations
 
@@ -27,5 +27,5 @@
 
 ## Reports
 
-    dasgeld report [--from <date>] [--to <date>]
+    dasgeld report [--from <date>] [--to <date>] [--account|a <name>]
     dasgeld list [--from <date>] [--to <date>] [--account|a <name>] [--verbose]
